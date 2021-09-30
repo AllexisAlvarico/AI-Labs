@@ -112,6 +112,7 @@ void Game::render()
 {
 	m_window.clear(sf::Color::Black);
 	m_player.render(m_window);
+	m_enemy.render(m_window);
 	m_window.display();
 }
 

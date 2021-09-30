@@ -13,7 +13,7 @@ public:
 private:
 	sf::Sprite m_sprite;
 	sf::Texture m_texture;
-	sf::Vector2f m_position{500, 500};
+	sf::Vector2f m_position{500.0f, 500.0f};
 
 };
 
