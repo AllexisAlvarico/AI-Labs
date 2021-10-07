@@ -5,25 +5,56 @@ Player::Player()
 	setupSprite();
 }
 
-
-
-void Player::handleInput()
+Player::~Player()
 {
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {
+	std::cout << "De-constructing player";
+}
 
-		//if (m_velocity > m_minVelocity && m_velocity < m_maxVelocity)
-		//{
-			m_velocity += 0.1;
-			std::cout << "Increased velocity: " + std::to_string(m_velocity) << std::endl;
-		//}
+
+
+void Player::movement()
+{
+
+	m_radians = m_angle * (PI / 180); // gets the radians and sets it
+	m_sprite.setRotation(m_angle); // rotate the sprite by the angle
+	m_position = m_position * m_speed; // set the previous player position after the speed
+	m_velocity = m_newVelocity; // set the new velocity to the current velocity
+	m_sprite.move(m_velocity * m_speed); // moves the player
+
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::W) || sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) // input of the user
+	{
+		m_newVelocity.x = cos(m_radians); // takes cos and turn into an angle 
+		m_newVelocity.y = sin(m_radians); // takes sin and turn into an angle 
+
+
+		if (m_speed <= m_maxVelocity) // if speed is below max speed
+		{
+			m_speed += 0.1; // increase the speed
+
+		}
+		else
+		{
+			m_speed += 0; // stop the increase the of the speed
+		}
+		if (m_minVelocity >= m_speed) // if its greater
+		{
+			m_speed = 0; // set it to zero
+		}
+		else
+		{
+			m_speed -= 0.02; // decrease the speed when stationary
+		}
 	}
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down)) {
-
-		//if (m_velocity < m_maxVelocity && m_velocity > m_minVelocity)
-		//{
-			m_velocity -= 0.1;
-			std::cout << "Decreasing velocity: " + std::to_string(m_velocity) << std::endl;
-		//}
+	else
+	{
+		if (m_minVelocity >= m_speed) // if its greater
+		{
+			m_speed = 0; // set it to zero
+		}
+		else
+		{
+			m_speed -= 0.02; // decrease the speed when stationary
+		}
 	}
 
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
@@ -35,6 +66,10 @@ void Player::handleInput()
 	{
 		m_angle++;
 	}
+
+	std::cout << "Speed: " << m_speed << std::endl;
+
+
 }
 
 void Player::setupSprite()
@@ -47,6 +82,7 @@ void Player::setupSprite()
 	m_sprite.setTexture(m_texture);
 	m_sprite.setPosition(m_position);
 	m_sprite.setOrigin(128.5f, 123.0f);
+
 	m_sprite.setScale(sf::Vector2f(0.3f, 0.3f));
 }
 
@@ -57,31 +93,30 @@ void Player::render(sf::RenderWindow &t_window)
 
 void Player::update(sf::Time t_deltaTime)
 {
-	handleInput();
+	movement();
 	setBoundary();
 
-	m_sprite.move(sf::Vector2f(m_velocity, 0.0f));
-	m_sprite.setRotation(m_angle);
+
 	//TODO add position movement here
 }
 
 void Player::setBoundary()
 {
-	if (m_sprite.getPosition().x < -200)
+	if (m_sprite.getPosition().x < -128.5f)
 	{
-		m_sprite.setPosition(sf::Vector2f(m_windowWidth + 100, m_sprite.getPosition().y));
+		m_sprite.setPosition(sf::Vector2f(m_windowWidth + 128.5f, m_sprite.getPosition().y));
 	}
-	if (m_sprite.getPosition().x > m_windowWidth + 200)
+	if (m_sprite.getPosition().x > m_windowWidth + 128.5f)
 	{
-		m_sprite.setPosition(sf::Vector2f(-200, m_sprite.getPosition().y));
+		m_sprite.setPosition(sf::Vector2f(-128.5f, m_sprite.getPosition().y));
 	}
 
-	if (m_sprite.getPosition().y < -200)
+	if (m_sprite.getPosition().y < -123.0f)
 	{
-		m_sprite.setPosition(sf::Vector2f(m_sprite.getPosition().x, m_windowHeight + 100));
+		m_sprite.setPosition(sf::Vector2f(m_sprite.getPosition().x, m_windowHeight + 123.0f));
 	}
-	if (m_sprite.getPosition().y > m_windowHeight + 200)
+	if (m_sprite.getPosition().y > m_windowHeight + 123.0f)
 	{
-		m_sprite.setPosition(sf::Vector2f(m_sprite.getPosition().x, - 200));
+		m_sprite.setPosition(sf::Vector2f(m_sprite.getPosition().x, -123.0f));
 	}
 }
