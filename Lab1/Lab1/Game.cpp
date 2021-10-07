@@ -17,7 +17,7 @@
 /// load and setup thne image
 /// </summary>
 Game::Game() :
-	m_window{ sf::VideoMode{ 1980U, 1080U, 32U }, "SFML Game" },
+	m_window{ sf::VideoMode{ m_windowWidth, m_windowHeight, 32U }, "SFML Game" },
 	m_exitGame{false} //when true game will exit
 {
 	setupFontAndText(); // load font 
@@ -103,6 +103,8 @@ void Game::update(sf::Time t_deltaTime)
 	{
 		m_window.close();
 	}
+
+	m_player.update(t_deltaTime);
 }
 
 /// <summary>

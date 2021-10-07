@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>C:\Users\gameuser\Desktop\Totally College Work(pls don't check ;-;)\AI Works\AI labs\Lab2\Debug\Lab2.exe</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles>
+    <ContentFile>
+      <FullPath>C:\Users\gameuser\Desktop\Totally College Work(pls don't check ;-;)\AI Works\AI labs\Lab2\Lab2\ASSETS\FONTS\ariblk.ttf</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\gameuser\Desktop\Totally College Work(pls don't check ;-;)\AI Works\AI labs\Lab2\Lab2\ASSETS\IMAGES\SFML-LOGO.png</FullPath>
+    </ContentFile>
+  </ContentFiles>
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>
