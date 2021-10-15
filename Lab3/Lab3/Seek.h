@@ -17,8 +17,8 @@ public:
 private:
 	sf::Sprite m_sprite;
 	sf::Texture m_texture;
-	MyVector3 m_position{ (m_windowWidth / 2),(m_windowHeight / 2) + 100,0 };
-	double m_maxVelocity{ 1.0f };
+	MyVector3 m_position{ (m_windowWidth / 2) + 200,(m_windowHeight / 2) + 200,0 };
+	double m_maxVelocity{ 3.0f };
 	double m_minVelocity{ 0.0 };
 };
 

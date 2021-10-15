@@ -7,7 +7,7 @@ Seek::Seek()
 
 void Seek::setupSprite()
 {
-	if (!m_texture.loadFromFile("ASSETS\\IMAGES\\enemySprite.png")) {
+	if (!m_texture.loadFromFile("ASSETS\\IMAGES\\enemySeeker.png")) {
 
 		std::cout << "Error enemy's texture not found!" << std::endl; // Error on texture
 	}
