@@ -32,3 +32,20 @@ void Enemy::render(sf::RenderWindow& t_window)
 void Enemy::update(sf::Time t_deltaTime)
 {
 }
+
+void Enemy::kinematicWander()
+{
+
+}
+
+void Enemy::kinematicSeek()
+{
+
+
+
+}
+
+void Enemy::getNewOrientation(MyVector3 t_currentOrientation, MyVector3 t_velocity)
+{
+
+}

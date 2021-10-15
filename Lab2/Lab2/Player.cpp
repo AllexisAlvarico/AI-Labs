@@ -14,10 +14,9 @@ Player::~Player()
 
 void Player::movement()
 {
-
 	m_radians = m_angle * (PI / 180); // gets the radians and sets it
 	m_sprite.setRotation(m_angle); // rotate the sprite by the angle
-	m_position = m_position * m_speed; // set the previous player position after the speed
+	m_position = m_sprite.getPosition(); // set the previous player position after the speed
 	m_velocity = m_newVelocity; // set the new velocity to the current velocity
 	m_sprite.move(m_velocity * m_speed); // moves the player
 
@@ -59,15 +58,15 @@ void Player::movement()
 
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
 	{
-		m_angle--;
+		m_angle-= 3;
 	}
 
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
 	{
-		m_angle++;
+		m_angle+= 3;
 	}
 
-	std::cout << "Speed: " << m_speed << std::endl;
+	//std::cout << "Speed: " << m_speed << std::endl;
 
 
 }
@@ -93,6 +92,7 @@ void Player::render(sf::RenderWindow &t_window)
 
 void Player::update(sf::Time t_deltaTime)
 {
+	getPosition();
 	movement();
 	setBoundary();
 
@@ -119,4 +119,10 @@ void Player::setBoundary()
 	{
 		m_sprite.setPosition(sf::Vector2f(m_sprite.getPosition().x, -123.0f));
 	}
+}
+
+MyVector3 Player::getPosition()
+{	
+	//std::cout << "Player's Position: " + std::to_string(m_position.x) + ", " + std::to_string(m_position.y) + ", " + std::to_string(m_position.z) << std::endl;
+	return m_position;
 }

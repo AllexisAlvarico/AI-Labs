@@ -11,13 +11,14 @@ public:
 	void setupSprite();
 	void render(sf::RenderWindow& t_window);
 	void update(sf::Time t_deltaTime);
+	void kinematicWander();
+	void kinematicSeek();
+	void getNewOrientation(MyVector3 t_currentOrientation, MyVector3 t_velocity);
 
 private:
 	sf::Sprite m_sprite;
 	sf::Texture m_texture;
-	MyVector3 m_position{ (m_windowWidth / 2),(m_windowHeight / 2),0 };
-	MyVector3 m_currentPos{};
-	MyVector3 m_newPos{};
+	MyVector3 m_position{ (m_windowWidth / 2),(m_windowHeight / 2) + 100,0 };
 	MyVector3 m_velocity{};
 	MyVector3 m_newVelocity{};
 
