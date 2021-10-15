@@ -14,8 +14,6 @@ public:
 	Steering getSteering(MyVector3 t_targetPos);
 	double getRotation(MyVector3 t_vector);
 	double RadianToDegrees(float t_radian);
-
-
 private:
 	sf::Sprite m_sprite;
 	sf::Texture m_texture;

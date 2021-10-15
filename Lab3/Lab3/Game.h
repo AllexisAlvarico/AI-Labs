@@ -13,6 +13,7 @@
 #include "Player.h"
 #include "Enemy.h"
 #include "Seek.h"
+#include "Arrive.h"
 #include "Global.h"
 
 class Game
@@ -44,6 +45,7 @@ private:
 	Player m_player;
 	//Enemy m_enemy;
 	Seek m_seekEnemy;
+	Arrive m_arriveEnemy;
 
 };
 

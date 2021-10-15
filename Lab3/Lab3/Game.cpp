@@ -105,7 +105,8 @@ void Game::update(sf::Time t_deltaTime)
 	}
 
 	m_player.update(t_deltaTime);
-	m_seekEnemy.update(t_deltaTime,m_player.getPosition());
+	//m_seekEnemy.update(t_deltaTime,m_player.getPosition());
+	m_arriveEnemy.update(t_deltaTime, m_player.getPosition());
 }
 
 /// <summary>
@@ -116,7 +117,8 @@ void Game::render()
 	m_window.clear(sf::Color::Black);
 	m_player.render(m_window);
 	//m_enemy.render(m_window);
-	m_seekEnemy.render(m_window);
+	//m_seekEnemy.render(m_window);
+	m_arriveEnemy.render(m_window);
 	m_window.display();
 }
 

@@ -6,4 +6,5 @@ static unsigned int m_windowHeight{	1000U };
 
 const double PI = 3.141592653;
 
+
 #endif

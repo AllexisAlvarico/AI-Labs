@@ -112,7 +112,6 @@ void Player::setBoundary()
 
 sf::Vector2f Player::getPosition()
 {	
-	//std::cout << "Player's Position: " + std::to_string(m_position.x) + ", " + std::to_string(m_position.y) + ", " + std::to_string(m_position.z) << std::endl;
 	return m_position;
 }
 
