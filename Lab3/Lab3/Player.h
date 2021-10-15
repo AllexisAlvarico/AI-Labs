@@ -14,7 +14,7 @@ public:
 	void update(sf::Time t_deltaTime);
 	void setBoundary();
 	sf::Vector2f getPosition();
-	double RadiusToDegrees(float t_radius);
+	double RadianToDegrees(float t_radian);
 
 private:
 	sf::Sprite m_sprite;

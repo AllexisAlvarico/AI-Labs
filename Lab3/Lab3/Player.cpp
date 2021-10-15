@@ -44,15 +44,14 @@ void Player::movement(sf::Time t_deltaTime)
 		m_orientation -= m_rotation * t_deltaTime.asSeconds();
 		m_velocity = MyVector3{ cosf(m_orientation), sinf(m_orientation), 0.0 } *m_speed;
 
-		m_sprite.setRotation(RadiusToDegrees(atan2f(m_velocity.y, m_velocity.x)));
+		m_sprite.setRotation(RadianToDegrees(atan2f(m_velocity.y, m_velocity.x)));
 	}
 
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
 	{
 		m_orientation += m_rotation * t_deltaTime.asSeconds();
 		m_velocity = MyVector3{ cosf(m_orientation), sinf(m_orientation), 0.0 } *m_speed;
-
-		m_sprite.setRotation(RadiusToDegrees((atan2f(m_velocity.y, m_velocity.x))));
+		m_sprite.setRotation(RadianToDegrees((atan2f(m_velocity.y, m_velocity.x))));
 	}
 
 	m_position = m_position + m_velocity * t_deltaTime.asSeconds();
@@ -117,7 +116,7 @@ sf::Vector2f Player::getPosition()
 	return m_position;
 }
 
-double Player::RadiusToDegrees(float t_radius)
+double Player::RadianToDegrees(float t_radian)
 {
-	return t_radius * (180.0f / PI);
+	return t_radian * (180.0f / PI);
 }

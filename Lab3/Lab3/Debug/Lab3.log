@@ -1,14 +1,28 @@
-﻿  Player.cpp
-C:\Users\gameuser\Desktop\Totally-College-Work\AI Works\AI labs\Lab3\Lab3\Player.cpp(45,32): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\gameuser\Desktop\Totally-College-Work\AI Works\AI labs\Lab3\Lab3\Player.cpp(45,53): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\gameuser\Desktop\Totally-College-Work\AI Works\AI labs\Lab3\Lab3\Player.cpp(47,71): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\gameuser\Desktop\Totally-College-Work\AI Works\AI labs\Lab3\Lab3\Player.cpp(47,57): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\gameuser\Desktop\Totally-College-Work\AI Works\AI labs\Lab3\Lab3\Player.cpp(47,39): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\gameuser\Desktop\Totally-College-Work\AI Works\AI labs\Lab3\Lab3\Player.cpp(53,32): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\gameuser\Desktop\Totally-College-Work\AI Works\AI labs\Lab3\Lab3\Player.cpp(53,53): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\gameuser\Desktop\Totally-College-Work\AI Works\AI labs\Lab3\Lab3\Player.cpp(55,72): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\gameuser\Desktop\Totally-College-Work\AI Works\AI labs\Lab3\Lab3\Player.cpp(55,58): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\gameuser\Desktop\Totally-College-Work\AI Works\AI labs\Lab3\Lab3\Player.cpp(55,39): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\gameuser\Desktop\Totally-College-Work\AI Works\AI labs\Lab3\Lab3\Player.cpp(72,95): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\gameuser\Desktop\Totally-College-Work\AI Works\AI labs\Lab3\Lab3\Player.cpp(72,54): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+﻿  Game.cpp
+C:\Users\gameuser\Desktop\Totally-College-Work\AI Works\AI labs\Lab3\Lab3\Enemy.h(18,68): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\gameuser\Desktop\Totally-College-Work\AI Works\AI labs\Lab3\Lab3\Enemy.h(18,42): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  Seek.cpp
+C:\Users\gameuser\Desktop\Totally-College-Work\AI Works\AI labs\Lab3\Lab3\Seek.cpp(42,37): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\gameuser\Desktop\Totally-College-Work\AI Works\AI labs\Lab3\Lab3\Seek.cpp(50,53): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\gameuser\Desktop\Totally-College-Work\AI Works\AI labs\Lab3\Lab3\Seek.cpp(50,41): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  main.cpp
+C:\Users\gameuser\Desktop\Totally-College-Work\AI Works\AI labs\Lab3\Lab3\Enemy.h(18,68): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\gameuser\Desktop\Totally-College-Work\AI Works\AI labs\Lab3\Lab3\Enemy.h(18,42): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  Generating Code...
   Lab3.vcxproj -> C:\Users\gameuser\Desktop\Totally-College-Work\AI Works\AI labs\Lab3\Debug\Lab3.exe
