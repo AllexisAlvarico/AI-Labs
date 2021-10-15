@@ -105,7 +105,7 @@ void Game::update(sf::Time t_deltaTime)
 	}
 
 	m_player.update(t_deltaTime);
-	m_seekEnemy.update(t_deltaTime);
+	m_seekEnemy.update(t_deltaTime,m_player.getPosition());
 }
 
 /// <summary>

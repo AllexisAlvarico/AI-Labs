@@ -42,7 +42,7 @@ private:
 	sf::Sprite m_logoSprite; // sprite used for sfml logo
 	bool m_exitGame; // control exiting game
 	Player m_player;
-	Enemy m_enemy;
+	//Enemy m_enemy;
 	Seek m_seekEnemy;
 
 };

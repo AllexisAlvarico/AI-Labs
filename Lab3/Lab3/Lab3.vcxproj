@@ -38,6 +38,7 @@
     <ClInclude Include="MyVector3.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Seek.h" />
+    <ClInclude Include="Steering.h" />
     <ClInclude Include="Wander.h" />
   </ItemGroup>
   <ItemGroup>

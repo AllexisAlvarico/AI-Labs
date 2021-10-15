@@ -1,3 +1,14 @@
 ﻿  Player.cpp
-C:\Users\gameuser\Desktop\Totally-College-Work\AI Works\AI labs\Lab3\Lab3\Player.cpp(18,23): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\gameuser\Desktop\Totally-College-Work\AI Works\AI labs\Lab3\Lab3\Player.cpp(45,32): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\gameuser\Desktop\Totally-College-Work\AI Works\AI labs\Lab3\Lab3\Player.cpp(45,53): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\gameuser\Desktop\Totally-College-Work\AI Works\AI labs\Lab3\Lab3\Player.cpp(47,71): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\gameuser\Desktop\Totally-College-Work\AI Works\AI labs\Lab3\Lab3\Player.cpp(47,57): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\gameuser\Desktop\Totally-College-Work\AI Works\AI labs\Lab3\Lab3\Player.cpp(47,39): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\gameuser\Desktop\Totally-College-Work\AI Works\AI labs\Lab3\Lab3\Player.cpp(53,32): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\gameuser\Desktop\Totally-College-Work\AI Works\AI labs\Lab3\Lab3\Player.cpp(53,53): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\gameuser\Desktop\Totally-College-Work\AI Works\AI labs\Lab3\Lab3\Player.cpp(55,72): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\gameuser\Desktop\Totally-College-Work\AI Works\AI labs\Lab3\Lab3\Player.cpp(55,58): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\gameuser\Desktop\Totally-College-Work\AI Works\AI labs\Lab3\Lab3\Player.cpp(55,39): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\gameuser\Desktop\Totally-College-Work\AI Works\AI labs\Lab3\Lab3\Player.cpp(72,95): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\gameuser\Desktop\Totally-College-Work\AI Works\AI labs\Lab3\Lab3\Player.cpp(72,54): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
   Lab3.vcxproj -> C:\Users\gameuser\Desktop\Totally-College-Work\AI Works\AI labs\Lab3\Debug\Lab3.exe
