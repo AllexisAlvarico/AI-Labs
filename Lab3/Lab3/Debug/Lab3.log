@@ -1,7 +1,0 @@
-﻿  Arrive.cpp
-C:\Users\gameuser\Desktop\Totally-College-Work\AI Works\AI labs\Lab3\Lab3\Arrive.cpp(38,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\gameuser\Desktop\Totally-College-Work\AI Works\AI labs\Lab3\Lab3\Arrive.cpp(41,38): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\gameuser\Desktop\Totally-College-Work\AI Works\AI labs\Lab3\Lab3\Arrive.cpp(47,38): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\gameuser\Desktop\Totally-College-Work\AI Works\AI labs\Lab3\Lab3\Arrive.cpp(59,53): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\gameuser\Desktop\Totally-College-Work\AI Works\AI labs\Lab3\Lab3\Arrive.cpp(59,41): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-  Lab3.vcxproj -> C:\Users\gameuser\Desktop\Totally-College-Work\AI Works\AI labs\Lab3\Debug\Lab3.exe
